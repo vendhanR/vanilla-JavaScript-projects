@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.btn-open{
+    padding: 0.8rem;
+    color: #fff;
+    border: none;
+    background-color: purple;
+    cursor: pointer;
+}
+
+
+#popup-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#popup-container.active{
+    display: flex;
+}
+
+#popup{
+    background-color: #fff;
+    padding:3rem 1rem;
+    top: 10px;
+    box-shadow: 2px 5px 15px  rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+#popup .btn-close{
+    padding: 0.8rem;
+    color: purple;
+    font-size: large;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
